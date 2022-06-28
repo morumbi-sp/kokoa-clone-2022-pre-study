@@ -1,3 +1,3 @@
 # Nomad Coder Kokoa clone class
 
-HTML / CSS studying.
+HTML / CSS & Git studing
