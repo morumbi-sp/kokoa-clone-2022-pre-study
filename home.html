@@ -9,21 +9,29 @@
         background-color: tomato;
       }
       body {
+        margin: 0;
+        padding: 20px;
         background-color: white;
-        margin-top: 50px;
-        margin-left: 40px;
-        margin-right: 30px;
-        margin-bottom: 20px;
       }
       div {
         height: 50px;
         width: 50px;
-        margin-left: 30px;
         background-color: aqua;
+      }
+      #firstDiv {
+        padding: 20px;
+      }
+      #secondDiv {
+        height: 20px;
+        width: 20px;
+        padding: 10px;
+        background-color: black;
       }
     </style>
   </head>
   <body>
-    <div></div>
+    <div id="firstDiv">
+      <div id="secondDiv"></div>
+    </div>
   </body>
 </html>
