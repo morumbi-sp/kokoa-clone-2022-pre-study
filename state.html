@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      button {
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+        background-color: aqua;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        background-color: blue;
+      }
+      button:active {
+        background-color: tomato;
+      }
+      input:focus {
+        background-color: palegreen;
+      }
+      input::placeholder {
+        color: yellowgreen;
+      }
+      input {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button>Hello</button>
+    </div>
+    <div>
+      <input type="text" placeholder="username" />
+      <input type="password" placeholder="password" />
+    </div>
+  </body>
+</html>
