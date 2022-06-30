@@ -9,16 +9,27 @@
         height: 100vh;
         margin: 20px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      div {
+        display: flex;
+        justify-content: center;
         align-items: center;
       }
       .box {
-        height: 80px;
-        width: 80px;
+        height: 150px;
+        width: 150px;
         border: 2px solid black;
+        margin: 20px;
+        font-size: 45px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
       }
       .redbox {
-        background-color: indianred;
+        background-color: rgb(148, 0, 0);
+        color: whitesmoke;
       }
       .bluebox {
         background-color: aquamarine;
@@ -26,8 +37,9 @@
     </style>
   </head>
   <body>
-    <div class="box redbox"></div>
-    <div class="box bluebox"></div>
-    <div class="box redbox"></div>
+    <div class="box redbox">F</div>
+    <div class="box bluebox">L</div>
+    <div class="box redbox">E</div>
+    <div class="box bluebox">X</div>
   </body>
 </html>
