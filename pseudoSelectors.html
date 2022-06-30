@@ -12,6 +12,20 @@
       span:nth-child(4n + 3) {
         background-color: teal;
       }
+      p span {
+        color: white;
+      }
+      div {
+        padding: 15px 0px;
+      }
+      div span {
+        background-color: aqua;
+        border-radius: 10px;
+        padding: 3px 10px;
+      }
+      div > span {
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
@@ -25,5 +39,12 @@
     <span>hello</span>
     <span>hello</span>
     <span>hello</span>
+    <div>
+      <span>Lorem</span>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur
+        <span>adipisicing</span> adipisicing elit.
+      </p>
+    </div>
   </body>
 </html>
