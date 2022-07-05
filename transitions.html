@@ -12,27 +12,39 @@
         height: 100vh;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
       }
-
-      @keyframes slide-rotate-hor-top {
-        0% {
-          transform: translateY(0) rotateX(0deg);
-        }
-        100% {
-          transform: translateY(-150px) rotateX(-70deg);
-        }
-      }
-
-      img {
+      div {
         width: 200px;
-        border: 2px solid black;
-        border-radius: 50%;
-        animation: slide-rotate-hor-top 0.5s
-          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        height: 200px;
+      }
+      @media screen and (max-width: 500px) {
+        div {
+          background-color: tomato;
+        }
+      }
+      @media screen and (min-width: 501px) and (max-width: 700px) {
+        div {
+          background-color: aqua;
+        }
+      }
+      @media screen and (min-width: 701px) {
+        div {
+          background-color: teal;
+        }
+      }
+      span {
+        font-size: 30px;
+      }
+      @media screen and (orientation: landscape) {
+        span {
+          display: none;
+        }
       }
     </style>
   </head>
   <body>
-    <img src="img/chicken.png" alt="" />
+    <div></div>
+    <span>Pleas flip your phone :(</span>
   </body>
 </html>
